@@ -1,13 +1,137 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Inter", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.menu-bar {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+.navbar-nav{
+  flex-direction: row !important;
+}
+/* Brand Name */
+.brand {
+  font-size: 25px !important;
+  font-weight: 900;
+  color: #022f44;
+}
+.brand span {
+  color: #fb8501;
+}
+
+/* Menu Button */
+.menu-btn button {
+  width: 150px;
+  font-weight: 600;
+  
+}
+.menu-btn:first-child {
+  margin-right: 15px;
+}
+.menu-btn .free-btn , .logout-btn {
+  background: #023047;
+  outline: none;
+  border: none;
+}
+.menu-btn .free-btn:hover,
+.menu-btn .free-btn:active,
+.menu-btn .free-btn:focus {
+  background: #023047;
+  border: none;
+  box-shadow: none;
+}
+.logout-btn:hover,
+.logout-btn:active,
+.logout-btn:focus {
+  background: #023047;
+  border: none;
+  box-shadow: none;
+}
+.menu-btn .menu-login-btn {
+  background: #fb8501;
+  outline: none;
+  border: none;
+}
+.menu-btn .menu-login-btn:hover,
+.menu-btn .menu-login-btn:active,
+.menu-btn .menu-login-btn:focus {
+  background: #fb8501;
+  border: none;
+  box-shadow: none;
+}
+
+/* Body Content */
+/* Login-form */
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.login-form .form-header {
+  margin-bottom: 25px;
+}
+.login-form h1 {
+  color: #013147;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.login-form h2 {
+  color: #013147;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+.login-form .submit-btn {
+  width: 100%;
+  background-color: #023047;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.login-form .submit-btn:hover,
+.login-form .submit-btn:active,
+.login-form .submit-btn:focus {
+  background: #023047;
+  border: none;
+  box-shadow: none;
+}
+.password-text,
+.password-text small {
+  color: #013147 !important;
+  font-weight: 600;
+  font-size: 10px !important;
+}
+.password-text small {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px;
+}
+
+/* Image */
+.image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+/* Mobile Responsive */
+@media (max-width: 448px) {
+  .image-col {
+    display: none;
+  }
+  .menu-btn-section {
+    display: none !important;
+  }
+  .password-text,
+  .password-text small {
+    
+    
+    font-size: 9px !important;
+  }
 }
